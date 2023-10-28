@@ -8,11 +8,9 @@ export default function LoginPage() {
         setMaxRow(Math.floor(window.innerHeight / 58))
         document.querySelectorAll(".box").forEach(box => {
             box.addEventListener("mouseleave", (e) => {
-                console.log("mouseLeave");
                 e.target.classList.add("dimmed")
             })
             box.addEventListener("mouseenter", (e) => {
-                console.log("mouseLeave");
                 e.target.classList.remove("dimmed")
             })
 
