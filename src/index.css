@@ -1,13 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+
+    @apply overflow-hidden bg-black
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@keyframes dim {
+    0% {
+        background-color: #590392;
+    }
+
+    100% {
+        background-color: rgb(15, 15, 15);
+    }
+}
+
+
+@keyframes bgAnim {
+    0% {
+        bottom: 1000px;
+    }
+
+    100% {
+        bottom: -1100px;
+
+    }
+}
+
+.box {
+    @apply h-14 aspect-square bg-[#590392] rounded-lg
+}
+
+.dimmed {
+    animation: dim 3s forwards;
+}
+
+.bgColor {
+    animation: bgAnim 6s forwards;
+    animation-iteration-count: infinite;
+
 }
