@@ -9,7 +9,7 @@ export default function LoginPage() {
     }, [])
     return (
         <div className="flex relative gap-1 flex-col w-full h-full justify-between">
-            <div className="bg-[#896fac34] flex justify-center items-center shadow-black backdrop-blur-xl border-[#b2a4b650] border shadow-2xl w-[30%] h-[50%] rounded-xl mx-[750px] my-[260px] absolute">
+            <div className="bg-[#896fac34] flex justify-center items-center shadow-black backdrop-blur-xl border-[#b2a4b650] border shadow-2xl w-[30%] h-[50%] left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 rounded-xl absolute">
                 <div className="flex-col flex w-72 gap-5">
                     <span className="text-white/50 font-bold text-3xl text-center">SIGN IN</span>
                     <input className="h-10 px-3  border border-[#b2a4b667] bg-transparent text-black/80 outline-none rounded-lg placeholder:text-[#b2a4b667]" placeholder="E-posta" type="text" />
