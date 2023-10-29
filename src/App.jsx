@@ -6,15 +6,6 @@ export default function LoginPage() {
     useEffect(() => {
         setMaxColumn(Math.floor(window.innerWidth / 58))
         setMaxRow(Math.floor(window.innerHeight / 58))
-        document.querySelectorAll(".box").forEach(box => {
-            box.addEventListener("mouseleave", (e) => {
-                e.target.classList.add("dimmed")
-            })
-            box.addEventListener("mouseenter", (e) => {
-                e.target.classList.remove("dimmed")
-            })
-
-        })
     }, [])
     return (
         <div className="flex relative gap-1 flex-col w-full h-full justify-between">
@@ -41,7 +32,10 @@ export default function LoginPage() {
 
                                 [...Array(maxColumn)].map(() => {
                                     return (
-                                        <div className="box dimmed">
+                                        <div className="box"
+                                            onMouseLeave={(e) => e.target.classList.add("dimmed")}
+                                            onMouseEnter={(e) => e.target.classList.remove("dimmed")}
+                                        >
 
                                         </div>
                                     )

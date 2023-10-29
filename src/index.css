@@ -30,7 +30,8 @@ body {
 }
 
 .box {
-    @apply h-14 aspect-square bg-[#590392] rounded-lg
+    @apply h-14 aspect-square rounded-lg;
+    background-color: rgb(15, 15, 15);
 }
 
 .dimmed {
